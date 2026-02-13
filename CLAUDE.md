@@ -1,6 +1,6 @@
 # DiscordAIBots
 
-Discord上で送信されたGoogleドライブの画像URLを、OllamaとQwen3 4Bモデルで評価し、結果を返信するBotプログラム。
+Discord上で送信されたGoogleドライブの画像URLから画像を取得して、OllamaとQwen3 4Bモデルで画像を評価し、結果を返信するBotプログラム。
 
 ## プロジェクト構成
 
@@ -67,7 +67,7 @@ gh pr merge --merge
 **注意**: PRは作成者自身が確認・承認してマージする。
 
 ### ドキュメント
-人間の操作が必要な部分（Discord Bot設定、Ollamaセットアップ等）は `Docs/` にマークダウンで保存する。
+人間の操作が必要な部分は `Docs/` にマークダウンで保存する。
 
 ## 技術参照
 
@@ -75,12 +75,5 @@ gh pr merge --merge
 
 - `Docs/Discord BotでPython処理を呼び出す.md` - Discord.pyの使い方、非同期処理
 - `Docs/OllamaとPythonでQwen3を動かす.md` - Qwen3モデルの設定、Python SDK
-
-## 必要なセットアップ（人間の操作）
-
-1. Discord Developer Portalでアプリ作成・Bot Token取得
-2. Ollamaのインストールと`qwen3:4b`モデルのプル
-3. Google Cloud ConsoleでAPI有効化（必要に応じて）
-4. `.env`ファイルの作成
 
 詳細は `Docs/` 内のドキュメントを参照。

@@ -1,0 +1,21 @@
+[project]
+name = "discord-ai-bots"
+version = "0.1.0"
+description = "Discord Bot that evaluates images from Google Drive using Ollama vision models"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "discord.py>=2.0",
+    "ollama",
+    "google-api-python-client",
+    "google-auth",
+    "python-dotenv",
+    "aiohttp",
+]
+
+[project.scripts]
+discord-bot = "src.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
