@@ -59,7 +59,12 @@ git commit -m "コミットメッセージ"
 
 # PRの作成
 gh pr create --title "タイトル" --body "説明"
+
+# PRのマージ（自分で承認する）
+gh pr merge --merge
 ```
+
+**注意**: PRは作成者自身が確認・承認してマージする。
 
 ### ドキュメント
 人間の操作が必要な部分（Discord Bot設定、Ollamaセットアップ等）は `Docs/` にマークダウンで保存する。
